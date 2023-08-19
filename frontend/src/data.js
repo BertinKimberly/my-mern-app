@@ -6,6 +6,7 @@ export const links = [
    { name: "Plans", path: "/plans" },
 
    { name: "Contact", path: "/contact" },
+   { name: "Login", path: "/login" },
 ];
 
 export const programs = [
