@@ -1,11 +1,11 @@
-.login__container{
+.register__container{
     margin-top: 7rem;
     display: grid;
     place-items: center;
     padding: 2rem;
 }
 
-.login__container h1{
+.register__container h1{
     margin-bottom: 1.2rem;
 }
 
@@ -18,7 +18,7 @@ a:hover{
     display: inline;
 }
 @media screen and (max-width:600px) {
-    .login__container{
+    .register__container{
         width: 100%;
         padding: 0.3rem;
     }

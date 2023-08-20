@@ -9,6 +9,7 @@ import Plans from "./pages/plans/Plans";
 import NotFound from "./pages/notFound/NotFound";
 import Footer from "./components/Footer";
 import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
 const App = () => {
    return (
       <BrowserRouter>
@@ -34,6 +35,10 @@ const App = () => {
             <Route
                path='/login'
                element={<Login />}
+            />
+                  <Route
+               path='/register'
+               element={< Register/>}
             />
             <Route
                path='*'

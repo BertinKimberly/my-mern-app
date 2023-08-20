@@ -5,6 +5,7 @@ import Programs from "../../components/Programs";
 import Values from "../../components/Values";
 import FAQs from "../../components/FAQs";
 import Testimonials from "../../components/Testimonials";
+import Login from "../login/Login";
 const Home = () => {
    return (
       <>
