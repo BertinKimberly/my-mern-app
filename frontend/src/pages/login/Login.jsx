@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./login.css";
+import Heading from "../../components/Heading";
+import  { FaUserCheck } from "react-icons/fa"
 const Login = () => {
    return (
       <div className='container login__container'>
-         <h1>Login</h1>
+         <Heading icon={<FaUserCheck/>} name="Login"/>
          <form>
             <div>
                <label htmlFor='email'>Email</label>

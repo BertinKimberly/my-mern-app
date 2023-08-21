@@ -1,8 +1,9 @@
 .login__container{
-    margin-top: 7rem;
+    margin-top: 9rem;
     display: grid;
     place-items: center;
     padding: 2rem;
+    margin-bottom: 6rem;
 }
 
 .login__container h1{

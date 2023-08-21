@@ -1,4 +1,6 @@
 import Header from "../../components/Header";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import { plans } from "../../data";
 import HeaderImage from "../../images/post3.jpeg";
 import Card from "../../UI/Card";
@@ -6,6 +8,7 @@ import "./plans.css";
 const Plans = () => {
    return (
       <>
+         <Navbar />
          <Header
             title='Membership plans'
             image={HeaderImage}
@@ -38,6 +41,7 @@ const Plans = () => {
                ))}
             </div>
          </section>
+         <Footer/>
       </>
    );
 };

@@ -1,10 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./register.css";
+import Heading from "../../components/Heading";
+import {FaUser} from "react-icons/fa"
 const Register = () => {
    return (
       <div className='container register__container'>
-         <h1>Create an account</h1>
+         <Heading
+            icon={<FaUser />}
+            name='Register'
+         />
          <form>
             <div>
                <label htmlFor='name'>Name</label>

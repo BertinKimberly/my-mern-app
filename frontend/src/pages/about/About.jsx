@@ -1,5 +1,7 @@
 import React from "react";
 import "./about.css";
+import Navbar from "../../components/Navbar"
+import Footer from "../../components/Footer"
 import Header from "../../components/Header";
 import HeaderImage from "../../images/p13.jpeg";
 import StoryImage from "../../images/p11.jpeg";
@@ -8,11 +10,15 @@ import MissionImage from "../../images/p10.jpeg";
 const About = () => {
    return (
       <>
+         <Navbar />
          <Header
             title='About Us'
             image={HeaderImage}
          >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum beatae ipsum ab quo perspiciatis veritatis praesentium soluta! Voluptatem distinctio, quisquam beatae rerum dignissimos minus! Reiciendis numquam sit necessitatibus iure?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum
+            beatae ipsum ab quo perspiciatis veritatis praesentium soluta!
+            Voluptatem distinctio, quisquam beatae rerum dignissimos minus!
+            Reiciendis numquam sit necessitatibus iure?
          </Header>
          <section className='about__story'>
             <div className='container about__story-container'>
@@ -89,6 +95,7 @@ const About = () => {
                </div>
             </div>
          </section>
+         <Footer />
       </>
    );
 };
