@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 export const registerController = async (req, res) => {
-  const { name, email, password } = req.body;
+  const { username, email, password } = req.body;
   try {
     const user = await User.findOne({ email });
     if (user)
@@ -11,7 +11,7 @@ export const registerController = async (req, res) => {
 
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    const newUser = new User({ name, email, password: hashedPassword });
+    const newUser = new User({ username, email, password: hashedPassword });
     await newUser.save();
 
     res.json({
@@ -41,7 +41,7 @@ export const loginController = async (req, res) => {
     );
     await res.json({
       message: "authenticated",
-      user: user.name,
+      user: user.username,
       token: token,
       status: true,
     });

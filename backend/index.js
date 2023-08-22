@@ -10,11 +10,13 @@ const port = process.env.PORT || 5001;
 
 app.use(cors());
 app.use(express.json());
-app.use(bodyParser.urlencoded({extended:false}))
-app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 //routes
-app.use("/auth",userRouter)
+app.use("/auth", userRouter);
+
+
 
 connection;
 app.listen(port, () => console.log(`server is running on port ${port}`));

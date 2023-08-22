@@ -1,5 +1,5 @@
 {
-  "name": "learn-react",
+  "name": "frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,17 +9,18 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.0",
-    "cors": "^2.8.5",
+    "buffer": "^6.0.3",
+    "emoji-picker-react": "^4.4.9",
     "react": "^18.2.0",
-    "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0",
-    "react-player": "^2.12.0",
-    "react-router-dom": "^6.10.0",
+    "react-icons": "^4.9.0",
+    "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
-    "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1",
+    "react-toastify": "^9.1.3",
+    "socket.io-client": "^4.7.1",
+    "styled-components": "^6.0.3",
+    "uuid": "^9.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -45,5 +46,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
   }
 }

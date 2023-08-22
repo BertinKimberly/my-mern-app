@@ -7,6 +7,7 @@ import Login from "./pages/login/Login";
 import Plans from "./pages/plans/Plans";
 import NotFound from "./pages/notFound/NotFound";
 import Register from "./pages/register/Register";
+import UserPage from "./pages/userpage/Userpage";
 const App = () => {
    return (
       <BrowserRouter>
@@ -32,9 +33,13 @@ const App = () => {
                path='/login'
                element={<Login />}
             />
-                  <Route
+            <Route
                path='/register'
-               element={< Register/>}
+               element={<Register />}
+            />
+            <Route
+               path='/userpage'
+               element={<UserPage />}
             />
             <Route
                path='*'
