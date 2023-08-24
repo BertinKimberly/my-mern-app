@@ -1,0 +1,153 @@
+.left-side{
+    width: 100px;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-left: 0.5rem;
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    max-width: 600px;
+}
+.searchbar input{
+    width: 80%;
+    background: transparent;
+    padding: 0.7rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 2rem 0 0 2rem;
+    color: var(--color-gray-100);
+}
+.searchbar .srch{
+    background: transparent;
+    padding: 0.7rem;
+    border:1px solid var(--color-secondary) ;
+    border-radius: 0 2rem 2rem 0;
+    display: grid;
+    place-items: center;
+}
+
+.right-side{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0.4rem;
+    margin-left: 1rem;
+}
+.right-side div{
+    margin: 0 1rem;
+}
+.user{
+    background: var(--color-secondary);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.sidebar{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 60%;
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+    transition: var(--transition);
+}
+.sidebar small{
+    display: none;
+}
+.sidebar div:hover small{
+    display: block;
+}
+.sidebar div:hover{
+    background: var(--color-gray-600);
+}
+.detailled-sidebar{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.detailled-sidebar section{
+    border-bottom: 2px solid var(--color-gray-100);
+    margin: 0;
+    padding: 2rem;
+}
+.detailled-sidebar section div{
+
+    margin-top: 0.7rem;
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    transition: var(--transition);
+}
+.detailled-sidebar section div:hover{
+    background: var(--color-gray-600);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/* MEDIA QUERIES */
+/* ==========MEDIUM SCREENS=========== */
+@media screen and (max-width:1024px) {
+    .left-side{
+        width: 50px;
+        margin-right: 0;
+    }
+.right-side{
+    margin-left: 0.5rem;
+    width: 150px;
+}
+.right-side div{
+    margin: 0 0.5rem;
+}
+    
+}
+
+/* ==========VERY SMALL SCREENS=========== */
+@media screen and (max-width:400px) {
+
+
+.right-side div{
+    margin: 0 0.3rem;
+}
+.right-side{
+    width: 100px;
+    margin-left: 0;
+}
+.searchbar input{
+    padding: 0.5rem;
+}
+.searchbar .srch{
+    padding: 0.5rem;
+}
+.user{
+    width: 1rem;
+    height: 1rem;
+}
+
+    
+}
