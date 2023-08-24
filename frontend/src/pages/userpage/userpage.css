@@ -43,13 +43,20 @@
     margin: 0 1rem;
 }
 .user{
-    background: var(--color-secondary);
+    background: transparent;
+    border: 1px solid var(--color-secondary);
     width: 2rem;
     height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: var(--transition);
+}
+.user:hover{
+    background: var(--color-secondary);
+    color: black;
+    font-weight: bold;
 }
 .sidebar{
     position: fixed;

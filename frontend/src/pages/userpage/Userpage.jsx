@@ -13,10 +13,9 @@ import {
    FaViadeoSquare,
    FaVideo,
    FaYoutubeSquare,
-   
 } from "react-icons/fa";
 
-import { SiChatbot, SiHelpdesk,  SiMessenger, SiViadeo} from "react-icons/si"
+import { SiChatbot, SiHelpdesk, SiMessenger, SiViadeo } from "react-icons/si";
 const Userpage = () => {
    const navigate = useNavigate();
    const [currentUser, setCurrentUser] = useState("");
@@ -26,7 +25,9 @@ const Userpage = () => {
       if (!localStorage.getItem("current-user")) {
          navigate("/login");
       } else setCurrentUser(JSON.parse(localStorage.getItem("current-user")));
+   
    }, []);
+
    return (
       <div>
          <nav>
@@ -49,7 +50,7 @@ const Userpage = () => {
                   <div className='notifications'>
                      <FaBell />
                   </div>
-                  <div className='user'>I</div>
+                  <div className='user'>{currentUser.toUpperCase().split("")[0]}</div>
                </div>
             </div>
          </nav>
@@ -69,79 +70,77 @@ const Userpage = () => {
                </div>
             </div>
          ) : (
-            <div className="detailled-sidebar">
-                <section>
-                <div>
-                  <FaHome />
-                  <small>Home</small>
-               </div>
-               <div>
-                  <FaVideo />
-                  <small>Reels</small>
-               </div>
-               <div>
-                  <FaYoutubeSquare />
-                  <small>Videos</small>
-               </div>
-                </section>
-                <section>
-                <h5>Explore</h5>
-                <div>
-                
-                  <SiChatbot />
-                  <small>Chatbot</small>
-               </div>
-               <div>
-                  <FaBible />
-                  <small>Bible</small>
-               </div>
-               <div>
-                  <SiViadeo/>
-                  <small>Movies</small>
-               </div>
-               <div>
-                  <FaPenAlt/>
-                  <small>BRT notes</small>
-               </div>
-               <div>
-                  <SiMessenger/>
-                  <small>BRT chat</small>
-               </div>
-               <div>
-                  <FaMusic/>
-                  <small>Music</small>
-               </div>
-             
-                </section>
-                <section>
+            <div className='detailled-sidebar'>
+               <section>
+                  <div>
+                     <FaHome />
+                     <small>Home</small>
+                  </div>
+                  <div>
+                     <FaVideo />
+                     <small>Reels</small>
+                  </div>
+                  <div>
+                     <FaYoutubeSquare />
+                     <small>Videos</small>
+                  </div>
+               </section>
+               <section>
+                  <h5>Explore</h5>
+                  <div>
+                     <SiChatbot />
+                     <small>Chatbot</small>
+                  </div>
+                  <div>
+                     <FaBible />
+                     <small>Bible</small>
+                  </div>
+                  <div>
+                     <SiViadeo />
+                     <small>Movies</small>
+                  </div>
+                  <div>
+                     <FaPenAlt />
+                     <small>BRT notes</small>
+                  </div>
+                  <div>
+                     <SiMessenger />
+                     <small>BRT chat</small>
+                  </div>
+                  <div>
+                     <FaMusic />
+                     <small>Music</small>
+                  </div>
+               </section>
+               <section>
                   <h5>More info</h5>
-                <div>
-                  <SiHelpdesk />
-                  <small>Home</small>
-               </div>
-               <div>
-                  <FaVideo />
-                  <small>Reels</small>
-               </div>
-               <div>
-                  <FaYoutubeSquare />
-                  <small>Videos</small>
-               </div>
-                </section>
-                <section>
-                <div>
-                  <FaHome />
-                  <small>Home</small>
-               </div>
-               <div>
-                  <FaVideo />
-                  <small>Reels</small>
-               </div>
-               <div>
-                  <FaYoutubeSquare />
-                  <small>Videos</small>
-               </div>
-                </section>
+                  <div>
+                     <SiHelpdesk />
+                     <small>Home</small>
+                  </div>
+                  <div>
+                     <FaVideo />
+                     <small>Reels</small>
+                  </div>
+                  <div>
+                     <FaYoutubeSquare />
+                     <small>Videos</small>
+                  </div>
+               </section>
+               <section>
+                  <div>
+                     <FaHome />
+                     <small>Home</small>
+                  </div>
+                  <div>
+                     <FaVideo />
+                     <small>Reels</small>
+                  </div>
+                  <div>
+                     <FaYoutubeSquare />
+                     <small>Videos</small>
+                  </div>
+               </section>
             </div>
          )}
       </div>
