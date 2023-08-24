@@ -4,14 +4,19 @@ import { useNavigate } from "react-router-dom";
 import {
    FaBars,
    FaBell,
+   FaBible,
    FaHome,
+   FaMusic,
+   FaPenAlt,
    FaSearch,
    FaUpload,
+   FaViadeoSquare,
    FaVideo,
-   FaVideoSlash,
    FaYoutubeSquare,
+   
 } from "react-icons/fa";
 
+import { SiChatbot, SiHelpdesk,  SiMessenger, SiViadeo} from "react-icons/si"
 const Userpage = () => {
    const navigate = useNavigate();
    const [currentUser, setCurrentUser] = useState("");
@@ -80,22 +85,38 @@ const Userpage = () => {
                </div>
                 </section>
                 <section>
+                <h5>Explore</h5>
                 <div>
-                  <FaHome />
-                  <small>Home</small>
+                
+                  <SiChatbot />
+                  <small>Chatbot</small>
                </div>
                <div>
-                  <FaVideo />
-                  <small>Reels</small>
+                  <FaBible />
+                  <small>Bible</small>
                </div>
                <div>
-                  <FaYoutubeSquare />
-                  <small>Videos</small>
+                  <SiViadeo/>
+                  <small>Movies</small>
                </div>
+               <div>
+                  <FaPenAlt/>
+                  <small>BRT notes</small>
+               </div>
+               <div>
+                  <SiMessenger/>
+                  <small>BRT chat</small>
+               </div>
+               <div>
+                  <FaMusic/>
+                  <small>Music</small>
+               </div>
+             
                 </section>
                 <section>
+                  <h5>More info</h5>
                 <div>
-                  <FaHome />
+                  <SiHelpdesk />
                   <small>Home</small>
                </div>
                <div>

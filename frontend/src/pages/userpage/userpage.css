@@ -107,6 +107,12 @@
 .detailled-sidebar section div:hover{
     background: var(--color-gray-600);
 }
+section div small{
+    margin-left: 1rem;
+}
+section div h5{
+    margin-bottom: 2rem;
+}
 ::-webkit-scrollbar{
     display: none;
 }
