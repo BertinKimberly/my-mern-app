@@ -25,7 +25,6 @@ const Userpage = () => {
       if (!localStorage.getItem("current-user")) {
          navigate("/login");
       } else setCurrentUser(JSON.parse(localStorage.getItem("current-user")));
-   
    }, []);
 
    return (
@@ -50,7 +49,9 @@ const Userpage = () => {
                   <div className='notifications'>
                      <FaBell />
                   </div>
-                  <div className='user'>{currentUser.toUpperCase().split("")[0]}</div>
+                  <div className='user'>
+                     {currentUser.toUpperCase().split("")[0]}
+                  </div>
                </div>
             </div>
          </nav>
