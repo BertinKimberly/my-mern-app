@@ -1,8 +1,13 @@
 import React from "react";
 import { MdClose, MdLogout } from "react-icons/md";
 import { styled } from "styled-components";
-
+import { logoutRoute } from "../utils/ApiRoutes";
+import axios from "axios";
 const ProfileWidget = ({ currentUser, showProfile }) => {
+   const logout = async () => {
+      const response = await axios.get(logoutRoute);
+      console.log(response);
+   };
    return (
       <Container>
          <MdClose
