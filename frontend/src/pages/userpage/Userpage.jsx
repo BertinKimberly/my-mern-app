@@ -10,23 +10,26 @@ import {
    FaPenAlt,
    FaSearch,
    FaUpload,
-   FaViadeoSquare,
    FaVideo,
    FaYoutubeSquare,
 } from "react-icons/fa";
 
 import { SiChatbot, SiHelpdesk, SiMessenger, SiViadeo } from "react-icons/si";
+import ProfileWidget from "../../components/ProfileWidget";
 const Userpage = () => {
    const navigate = useNavigate();
    const [currentUser, setCurrentUser] = useState("");
    const [showMenu, setShowMenu] = useState(false);
-
+   const [isShowProfile, setIsShowProfile] = useState(false);
    useEffect(() => {
       if (!localStorage.getItem("current-user")) {
          navigate("/login");
       } else setCurrentUser(JSON.parse(localStorage.getItem("current-user")));
    }, []);
 
+   const showProfile = () => {
+      setIsShowProfile(prev=>!prev);
+   };
    return (
       <div>
          <nav>
@@ -49,11 +52,20 @@ const Userpage = () => {
                   <div className='notifications'>
                      <FaBell />
                   </div>
-                  <div className='user'>
+                  <div
+                     className='user'
+                     onClick={showProfile}
+                  >
                      {currentUser.toUpperCase().split("")[0]}
                   </div>
                </div>
             </div>
+            {isShowProfile && (
+               <ProfileWidget
+                  currentUser={currentUser}
+                  showProfile={showProfile}
+               />
+            )}
          </nav>
          {showMenu ? (
             <div className='sidebar'>
