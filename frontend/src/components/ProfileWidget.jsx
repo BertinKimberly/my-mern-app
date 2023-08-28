@@ -44,6 +44,9 @@ const Container = styled.div`
    .close__btn {
       position: absolute;
       right: 1rem;
+      cursor: pointer;
+      background-color: var(--color-gray-400);
+      border-radius:50%;
       transition: var(--transition);
    }
 
