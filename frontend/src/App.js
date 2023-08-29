@@ -1,13 +1,14 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/home/Home";
-import About from "./pages/about/About";
-import Contact from "./pages/contact/Contact";
-import Login from "./pages/login/Login";
-import Plans from "./pages/plans/Plans";
-import NotFound from "./pages/notFound/NotFound";
-import Register from "./pages/register/Register";
-import UserPage from "./pages/userpage/Userpage";
+import Home from "./pages/Home";
+
+import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Plans from "./pages/Plans";
+import NotFound from "./pages/NotFound";
+import Register from "./pages/Register";
+import UserPage from "./pages/Userpage";
+import About from "./pages/About";
 const App = () => {
    return (
       <BrowserRouter>

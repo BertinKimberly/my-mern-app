@@ -1,9 +1,9 @@
 import React from "react";
-import "./notFound.css";
 import { Link } from "react-router-dom";
+import { styled } from "styled-components";
 const NotFound = () => {
    return (
-      <section>
+      <Container>
          <div className='container notfound__container'>
             <h2>Page Not Found</h2>
             <Link
@@ -13,8 +13,20 @@ const NotFound = () => {
                Go Back Home
             </Link>
          </div>
-      </section>
+      </Container>
    );
 };
 
 export default NotFound;
+
+const Container = styled.div`
+   .notfound__container {
+      text-align: center;
+      padding-top: 8rem;
+   }
+
+   .notfound__container .btn {
+      margin-top: 2rem;
+      display: inline-block;
+   }
+`;
