@@ -1,6 +1,10 @@
 import express from "express";
 const router = express.Router();
 import {
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
    loginController,
    registerController,
    LogoutController,
